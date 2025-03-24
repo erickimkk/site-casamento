@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.mea-culpa-regular {
+    font-family: "Mea Culpa", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  html, body {
+    height: 100%;
+    
+}
+  
+body {
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+    background-color: #e9e6ff !important;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#hero {
+    background: linear-gradient(to bottom, 
+                rgba(230, 230, 250, 0) 90%,  /* Transparente até 60% da altura */
+                rgba(230, 230, 250, 0.8) 97%, /* Quase visível em 85% */
+                rgba(230, 230, 250, 1) 100%), /* Totalmente visível no final */
+                url('img/WhatsApp\ Image\ 2025-03-23\ at\ 3.06.03\ PM.jpeg') 
+                no-repeat center center/cover;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+.hero h1 {
+    font-family: "Mea Culpa", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: start;
+    color: white; /* Cor do texto para destacar */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para dar destaque */
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: "Great Vibes", cursive;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    flex-wrap: nowrap; /* Adiciona quebra de linha quando necessário */
+  }
+  
+#countdown div {
+    display: block; /* Garante que os quadrados fiquem visíveis */
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 15px; /* Reduz o tamanho do bloco */
+    border-radius: 10px;
+    text-align: center;
+    width: 90px; /* Reduz a largura */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+#countdown div span {
+    font-size: 1rem;
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+    color: white; 
+  }
+#countdown div .unit {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white; /* Cor para o número */
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+#countdown p {
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+#about {
+    padding-top: 50px;
+}
+
+  #about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: "Mea Culpa", cursive;
+    text-align: center;
+}
+  
+.details{
+   /* font-family: "Mea Culpa", cursive;*/
+   
+   font-family: "Great Vibes", cursive;
+   position: relative;
+    top: -50px; /* Ajuste para aproximar a seção sem afetar a responsividade */
+}
+
+.details h2{
+    font-size: 2.5rem;
+}
+
+.details p {
+    text-align: start;
+}
+
+.icon-between {
+    width: 100px; /* ajuste conforme necessário */
+    height: auto;
+    display: block;
+    margin: 10px auto; /* adiciona espaçamento acima e abaixo */
+    padding: 0; /* Garante que não há padding extra */
+}
+
+
+
+.about, .details, .rsvp, .gifts {
+     background: transparent;
+}
+
+
+
+.rsvp{
+    font-family: "Great Vibes", cursive;
+    background: url('img/DALL·E\ 2025-03-24\ 12.58.54\ -\ A\ soft\ lavender-colored\ background\ with\ delicate\ lavender\ flowers\ gently\ falling\ from\ the\ top.\ The\ flowers\ should\ appear\ light\ and\ airy\,\ creating\ an\ e.webp') no-repeat center center/cover;
+    background-attachment: fixed; /* Mantém o fundo fixo ao rolar */
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+.rsvp button {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.rsvp button:hover {
+    background: #555;
+}
+
+.gifts{
+    font-family: "Great Vibes", cursive;
+}
+
+
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p{
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    section{
+        padding: 50px 20px; 
+        min-height: 87vh;
+    }
+    #countdown {
+        gap: 5px; /* Reduz o espaço entre os blocos */
+        font-size: 1.5rem; /* Reduz a fonte para telas pequenas */
+       
+    }
+
+    #countdown div {
+        width: 70px; /* Reduz ainda mais os blocos */
+        padding: 5px 10px;
+    }
+    .details{
+        margin-top: 0;
+        padding-top: 30px;
+    }
+
+    h1 {
+        font-size: 2rem; /* Define um tamanho fixo para telas menores */
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+}
