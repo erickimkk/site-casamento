@@ -164,7 +164,7 @@ section {
 .rsvp{
     font-family: "Great Vibes", cursive;
     background: url('img/fundoflor.webp') no-repeat center center/cover;
-    background-attachment: fixed; 
+    
     padding: 100px 20px;
     min-height: 100vh;
 }
