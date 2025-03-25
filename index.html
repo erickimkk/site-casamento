@@ -57,13 +57,10 @@
     <!-- Seção Confirmação de Presença -->
     <section id="rsvp" class="rsvp">
         <h2>Confirme sua Presença</h2>
+        <input type="text" id="nome" placeholder="Digite seu nome" />
         <div class="rsvp-buttons">
-            <a href="https://wa.me/5543996588171?text=Eu%20vou%20confirmar%20presen%C3%A7a.%20Estou%20ansioso%20para%20o%20evento." target="_blank">
-                <button type="button">Eu Vou</button>
-            </a>
-            <a href="https://wa.me/5543996588171?text=Desculpe,%20eu%20n%C3%A3o%20poderei%20comparecer%20ao%20evento." target="_blank">
-                <button type="button">Não Vou</button>
-            </a>
+            <button type="button" onclick="confirmarPresenca(true)">Eu Vou</button>
+            <button type="button" onclick="confirmarPresenca(false)">Não Vou</button>
         </div>
     </section>
 

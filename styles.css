@@ -169,6 +169,22 @@ section {
     min-height: 100vh;
 }
 
+.rsvp input {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.rsvp-buttons {
+    display: flex;
+    gap: 10px;
+}
+
 .rsvp button {
     padding: 10px 20px;
     background: #333;
@@ -178,9 +194,11 @@ section {
     cursor: pointer;
     font-size: 1rem;
 }
+
 .rsvp button:hover {
     background: #555;
 }
+
 
 .gifts{
     font-family: "Great Vibes", cursive;

@@ -24,3 +24,22 @@ const countdownFunction = setInterval(() => {
         document.getElementById('countdown').innerHTML = 'O grande dia chegou!';
     }
 }, 1000);
+
+function confirmarPresenca(vai) {
+    let nome = document.getElementById("nome").value.trim();
+    
+    if (nome === "") {
+        alert("Por favor, digite seu nome antes de confirmar.");
+        return;
+    }
+
+    let mensagem = vai
+        ? `Olá, meu nome é ${encodeURIComponent(nome)} e estou confirmando presença!`
+        : `Olá, meu nome é ${encodeURIComponent(nome)} e infelizmente não poderei comparecer.`;
+
+    let numeroWhatsApp = "5543996588171";
+    let link = `https://wa.me/${numeroWhatsApp}?text=${mensagem}`;
+
+    window.open(link, "_blank");
+}
+
