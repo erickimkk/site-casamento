@@ -163,7 +163,7 @@ section {
 
 .rsvp{
     font-family: "Great Vibes", cursive;
-    background: url('img/DALL·E\ 2025-03-24\ 12.58.54\ -\ A\ soft\ lavender-colored\ background\ with\ delicate\ lavender\ flowers\ gently\ falling\ from\ the\ top.\ The\ flowers\ should\ appear\ light\ and\ airy\,\ creating\ an\ e.webp') no-repeat center center/cover;
+    background: url('img/fundoflor.webp') no-repeat center center/cover;
     background-attachment: fixed; /* Mantém o fundo fixo ao rolar */
     padding: 100px 20px;
     min-height: 100vh;
