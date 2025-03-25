@@ -205,10 +205,11 @@ section {
 }
 .pic{
     font-family: 'Arial', sans-serif;
-    font-weight: bold;
 }
 
-
+.pic p {
+    font-size: 1.3rem !important; /* Força a alteração */
+}
 
 footer {
     background: #333;
