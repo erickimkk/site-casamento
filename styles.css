@@ -207,13 +207,34 @@ section {
     
     font-family: "Great Vibes", cursive;
 }
-.pic{
-    font-family: 'Arial', sans-serif;
-}
 
-.pic p {
-    font-size: 1.3rem !important; /* Força a alteração */
-}
+.pix-container {
+      border: 2px dashed #00bfa5;
+      padding: 20px;
+      width: fit-content;
+      margin: 30px auto;
+      text-align: center;
+      border-radius: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .pix-key {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+      word-break: break-all;
+    }
+    button {
+      background-color: #00bfa5;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #009e88;
+    }
 
 footer {
     background: #333;

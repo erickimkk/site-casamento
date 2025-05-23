@@ -42,4 +42,14 @@ function confirmarPresenca(vai) {
 
     window.open(link, "_blank");
 }
-
+function copiarPix() {
+    const chavePix = document.getElementById("pixKey").textContent;
+    navigator.clipboard.writeText(chavePix).then(() => {
+      document.getElementById("mensagem").textContent = "Chave Pix copiada com sucesso!";
+      setTimeout(() => {
+        document.getElementById("mensagem").textContent = "";
+      }, 3000);
+    }).catch(err => {
+      document.getElementById("mensagem").textContent = "Erro ao copiar chave Pix.";
+    });
+  }
